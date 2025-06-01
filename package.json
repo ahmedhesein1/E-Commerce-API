@@ -18,7 +18,7 @@
     "postgresql",
     "sequelize"
   ],
-  "author": "",
+  "author": "Ahmed Hussein",
   "license": "ISC",
   "description": "E-commerce API with TypeScript, Express, PostgreSQL, and Sequelize",
   "devDependencies": {

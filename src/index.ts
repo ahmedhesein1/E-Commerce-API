@@ -1,7 +1,7 @@
 import express, { Express } from "express";
 import cookieParser from "cookie-parser";
 import helmet from "helmet";
-import { connectDB } from "./config/db.js";
+import { connectDB } from "./config/db";
 import dotenv from "dotenv";
 const app: Express = express();
 
