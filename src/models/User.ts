@@ -3,7 +3,7 @@ import bcrypt from "bcrypt";
 import { UserAttributes, UserCreationAttributes } from "../types/user";
 import { sequelize } from "../config/db";
 
-export class User extends Model<UserAttributes, UserCreationAttributes> {
+export class User extends Model<UserCreationAttributes, UserAttributes> {
   public id!: number;
   public name!: string | null;
   public email!: string;
@@ -51,8 +51,6 @@ User.init(
       defaultValue: "user",
       allowNull: false,
     },
-    createdAt: { type: DataTypes.DATE },
-    updatedAt: { type: DataTypes.DATE },
   },
   {
     sequelize,
