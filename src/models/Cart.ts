@@ -29,13 +29,13 @@ Cart.init(
       defaultValue: "active",
     },
     total: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
     },
   },
   {
     sequelize,
     timestamps: true,
-    tableName: "Cart",
+    tableName: "Carts",
   }
 );
